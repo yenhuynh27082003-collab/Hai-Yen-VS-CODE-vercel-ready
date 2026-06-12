@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 142 57% 17%;
+  --muted: 120 33% 96%;
+  --muted-foreground: 142 19% 34%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 142 57% 17%;
+  --border: 140 22% 89%;
+  --input: 140 22% 89%;
+  --card: 0 0% 100%;
+  --card-foreground: 142 57% 17%;
+  --primary: 140 64% 40%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 46 100% 88%;
+  --secondary-foreground: 142 57% 17%;
+  --accent: 120 40% 95%;
+  --accent-foreground: 142 57% 17%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 140 64% 40%;
+  --radius: 0.5rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #12462a;
+  background: #ffffff;
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-space {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+}
