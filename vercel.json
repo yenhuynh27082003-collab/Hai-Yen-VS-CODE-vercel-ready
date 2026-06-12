@@ -27,6 +27,10 @@
       "dest": "api/index.py"
     },
     {
+      "src": "/profile/(.*)",
+      "dest": "api/index.py"
+    },
+    {
       "src": "/meal-plans",
       "dest": "api/index.py"
     },
@@ -47,6 +51,10 @@
       "dest": "api/index.py"
     },
     {
+      "src": "/app/(.*)",
+      "dest": "api/index.py"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/best4life/assets/$1"
     },
@@ -57,14 +65,5 @@
       "src": "/(.*)",
       "dest": "/best4life/index.html"
     }
-  ],
-  "experimentalServices": {
-    "frontend": {
-      "routePrefix": "/"
-    },
-    "backend": {
-      "root": "backend",
-      "routePrefix": "/_/backend"
-    }
-  }
+  ]
 }
